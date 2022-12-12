@@ -47,6 +47,8 @@ function onEscKeyPress(event) {
 
     if (event.code === ESC_KEY_CODE) {
         instance.close();
+        gallery.removeEventListener('keydown', onEscKeyPress);
+
     }
 }
 }
